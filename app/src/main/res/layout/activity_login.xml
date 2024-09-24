@@ -19,12 +19,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="24dp"/>
 
-    <!-- Campo de usuario -->
-
-    <!-- Campo de contraseña -->
-
-    <!-- Botón de login -->
-
     <EditText
         android:id="@+id/username"
         android:layout_width="309dp"
@@ -58,12 +52,12 @@
         app:layout_constraintTop_toBottomOf="@id/password" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="195dp"
-        android:layout_height="169dp"
-        app:srcCompat="@android:drawable/sym_def_app_icon"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="179dp" />
+        android:id="@+id/imageView2"
+        android:layout_width="160dp"
+        android:layout_height="172dp"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="171dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
