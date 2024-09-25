@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class LoginActivity : AppCompatActivity() {
@@ -36,10 +37,12 @@ class LoginActivity : AppCompatActivity() {
         val password = passwordEditText.text.toString()
 
         if (username.isNotEmpty() && password.isNotEmpty()) {
-            // Aquí puedes añadir la lógica de autenticación (local o servidor)
+            // Mostrar mensaje de éxito (aquí puedes implementar la lógica de autenticación)
+            Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show()
             loginTitleTextView.text = "Autenticando..."
         } else {
             // Muestra un mensaje si los campos están vacíos
+            Toast.makeText(this, "Por favor ingresa usuario y contraseña", Toast.LENGTH_SHORT).show()
             loginTitleTextView.text = "Por favor ingresa tus credenciales."
         }
     }
