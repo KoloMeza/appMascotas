@@ -6,12 +6,17 @@
     android:gravity="center"
     android:padding="16dp">
 
-    <TextView
-        android:id="@+id/tools_text"
-        android:layout_width="wrap_content"
+    <!-- Barra de búsqueda -->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pantalla de Herramientas"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:gravity="center" />
+        android:queryHint="Buscar o ingresar URL" />
+
+    <!-- WebView para navegar -->
+    <WebView
+        android:id="@+id/webview_tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </LinearLayout>
