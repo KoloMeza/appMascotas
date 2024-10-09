@@ -12,21 +12,28 @@
         android:id="@+id/videos_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Videos"
+        android:text="Galería de Videos"
         android:textSize="24sp"
         android:textStyle="bold"
         android:gravity="center"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="16dp" />
 
-    <!-- VideoView para reproducir un video -->
+    <!-- RecyclerView para mostrar la galería de videos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_videos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <!-- VideoView para reproducir el video seleccionado -->
     <VideoView
         android:id="@+id/video_view"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginBottom="16dp" />
 
-    <!-- Controles de video (botón play) -->
+    <!-- Botón para reproducir el video -->
     <Button
         android:id="@+id/play_button"
         android:layout_width="wrap_content"
